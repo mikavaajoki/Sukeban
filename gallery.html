@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+
+		<!-- Fontello CSS -->
+		<link rel="stylesheet" href="css/fontello.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css">		
+
+		<title>Gallery · Article · Sukeban Magazine</title>
+	</head>
+	<body>
+
+		<!-- Gallery -->
+		<section id="gallery">
+			<div class="">
+				<div class="row">
+
+					<div class="col-md-6 order-last order-md-1 info">
+						<!-- Swiper Pagination -->
+						<div class="swiper-pagination"></div>
+						<p>Aissatu, Amina, Ebony and LaDasia by Washington based photographer Kyna Plastice.</p>
+						<p>Aissati wears dress by Miu Miu</p>
+						<ul>
+							<li class="social-media">
+								<a class="social-media-link" href="#"><i class="icon-facebook"></i></a>
+								<a class="social-media-link" href="#"><i class="icon-twitter"></i></a>
+								<a class="social-media-link" href="#"><i class="icon-pinterest"></i></a>
+								<a class="social-media-link" href="#"><i class="icon-tumblr"></i></a>
+							</li>
+						</ul>
+						<div class="back-button">
+							<a href="article.html">
+								<img class="arrow" src="img/arrow-left-blue.png">Back to Sukeban
+							</a>
+						</div>
+					</div>
+					
+					<div class="col-md-6 order-first order-md-2 ">
+
+						<!-- Swiper Container -->
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url('img/gallery-thumb-1.jpg')">
+								</div>
+								<div class="swiper-slide" style="background-image:url('img/gallery-thumb-2.jpg')">
+								</div>
+								<div class="swiper-slide" style="background-image:url('img/gallery-thumb-3.jpg')">
+								</div>
+								<div class="swiper-slide" style="background-image:url('img/gallery-thumb-4.jpg')">
+								</div>
+								<div class="swiper-slide" style="background-image:url('img/gallery-thumb-5.jpg')">
+								</div>
+								<div class="swiper-slide" style="background-image:url('img/gallery-thumb-6.jpg')">
+								</div>
+							</div>
+
+								<!-- Arrows -->
+								<!--<div class="swiper-button-prev"></div>-->
+								<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- Swiper JS -->
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: true,
+				},
+				effect: 'slide',
+				spaceBetween: 40,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+</html>

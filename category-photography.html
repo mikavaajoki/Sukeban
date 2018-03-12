@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+
+		<!-- Fontello CSS -->
+		<link rel="stylesheet" href="css/fontello.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css">		
+
+		<title>Photography · Sukeban Magazine</title>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+			<a class="navbar-brand" href="index.html"><img src="img/sukeban-logo.png" alt="Sukeban Logo"></a>
+
+			<!-- Desktop Navigation -->
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="category-fashion.html">Fashion</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="category-photography.html">Photography</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-written.html">Written</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-girlsbygirls.html">Girlsbygirls</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-art.html">Art</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Categories</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Magazine</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Submissions</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Search</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sukeban TV</a>
+					</li>
+					<li class="nav-item social-media">
+						<a class="nav-link social-media-link" href="#"><i class="icon-facebook"></i></a>
+						<a class="nav-link social-media-link" href="#"><i class="icon-twitter"></i></a>
+						<a class="nav-link social-media-link" href="#"><i class="icon-instagram"></i></a>
+						<a class="nav-link social-media-link" href="#"><i class="icon-tumblr"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="index-button d-none d-md-none d-lg-block" data-toggle="modal" data-target="#index-modal">
+				Index
+			</div>
+
+			<div class="index-button d-lg-none" data-toggle="modal" data-target="#mobile-navigation">
+				Index
+			</div>
+
+			<!-- Mobile Navigation -->
+			<div class="modal fade" id="mobile-navigation" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+							<a class="navbar-brand" href="index.html"><img src="img/sukeban-logo-blue.png" alt="Sukeban Logo"></a>
+							<div class="index-button" data-dismiss="modal" aria-label="Close">
+								Close
+							</div>
+						</nav>
+						<div class="modal-body">
+							<ul class="nav-items">
+								<li class="nav-item">
+									<a class="nav-link" href="#">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Categories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Magazine</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Submissions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sukeban TV</a>
+								</li>
+								<li class="nav-item social-media">
+									<a class="nav-link social-media-link" href="#"><i class="icon-facebook"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-twitter"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-instagram"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-tumblr"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Index Modal -->
+		<div class="modal fade" id="index-modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+						<a class="navbar-brand" href="index.html"><img src="img/sukeban-logo-blue.png" alt="Sukeban Logo"></a>
+
+						<!-- Desktop Navigation -->
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="category-fashion.html">Fashion</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-photography.html">Photography</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-written.html">Written</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-girlsbygirls.html">Girlsbygirls</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-art.html">Art</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Shop</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Categories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Magazine</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#submissions">Submissions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sukeban TV</a>
+								</li>
+								<li class="nav-item social-media">
+									<a class="nav-link social-media-link" href="#"><i class="icon-facebook"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-twitter"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-instagram"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-tumblr"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="index-button" data-dismiss="modal" aria-label="Close">
+							Close
+						</div>
+					</nav>
+					<div class="modal-body">
+
+						<!-- About -->
+						<section id="about">
+							<div class="container">
+								<div class="row justify-content-md-center">
+									<div class="col-xs-12 col-md-6">
+										<p>
+											Sukeban Magazine formed in Tokyo, Japan on December 2016 by Yuki Haze and Erika Bowes, due to a feeling of alienation and disillusion in the fashion industry. Not only did there seem to be a great lack of inclusivity in the industry, particularly of women of colour, but the manner in which several platforms celebrated or hired talent made it difficult for young, aspiring or unknown photographers, stylists, models, artists and other creative individuals to find exposure for their work without having a strong social media presence or general good fortune first. Additionally, there seemed to be such an onslaught of ‘apparent’ diversity in the industry, which only really served as tokenism at the best.
+										</p>
+										<img src="img/about.jpg" class="mx-auto d-block about-image">
+										<p>
+											Although Sukeban, as a print and online platform, still has a long way to go to really include and support a wide range of individuals, our main aim is to at least attempt to do so, as well as provide a space for people that might not be getting the attention for their work at the moment, but deserve to. 
+										</p>
+										<p>
+											We also hope that people who have an interest in creative topics are able to visit Sukeban and gain not only inspiration but also find other like-minded people to potentially work with or contact. 
+										</p>
+										<p>
+											Sukeban is currently a non-profit platform, although if you are a company/organisation that recognises how lit we are and wants to finance or work with the magazine in some way, please contact us.
+										</p>
+									</div>
+								</div>
+								<div class="row index-nav">
+									<div class="col-6">
+										<div class="prev-button reverse">
+											<!--<a href="#about">
+												<img class="arrow" src="img/arrow-up-white.png">About
+											</a>-->
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="next-button reverse">
+											<a href="#submissions">
+												Submissions<img class="arrow" src="img/arrow-down-white.png">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="gradient top-to-bottom">
+						</div>
+
+						<!-- Submissions -->
+						<section id="submissions">
+							<div class="container">
+								<div class="row justify-content-md-center">
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Submissions
+										</h2>
+										<p>
+											If you are interested in being featured on Sukeban please read these guidelines and contact the following email:
+										</p>
+										<p>
+											<a href="javascript:linkTo_UnCryptMailto('nbjmup;tvcnjttjpotAtvlfcbo/dp/vl');"><span class="email" data-user="submissions" data-website="sukeban.co.uk"></span></a>
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Girls by Girls
+										</h2>
+										<p>
+											Please note that we are only accepting images that have been shot by girls of girls for the moment, but other than that we don’t have any particular guidelines. You can shoot as many people as you want in whatever setting, and they can be any age &mdash; however nudity is only accepted if the subjects are 18 years of age or over. Please remember to: include the names and social medias handles of everyone involved, as well as a short bio about the person (4-6 sentences).
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Editorials &amp; Interviews
+										</h2>
+										<p>
+											If you have an interesting concept and a clear idea of who you are going to work with or interview please contact us and we’ll get back to you. Please remember to: include your full name and all social handles of everyone involved in the shoot as well as full clothing credits.
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Artists
+										</h2>
+										<p>
+											Please remember to: include your full name and social media handles/site links.
+										</p>
+									</div>
+								</div>
+								<div class="row index-nav">
+									<div class="col-6">
+										<div class="prev-button">
+											<a href="#about">
+												<img class="arrow" src="img/arrow-up-blue.png">About
+											</a>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="next-button">
+											<a href="#contact">
+												Contact<img class="arrow" src="img/arrow-down-blue.png">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="gradient bottom-to-top">
+						</div>
+
+						<!-- Contact -->
+						<section id="contact">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<div class="mail">
+											<a href="javascript:linkTo_UnCryptMailto('nbjmup;tvcnjttjpotAtvlfcbo/dp/vl');"><span class="email" data-user="contact" data-website="sukeban.co.uk"></span></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="row index-nav">
+									<div class="col-6">
+										<div class="prev-button reverse">
+											<a href="#submissions">
+												<img class="arrow" src="img/arrow-up-white.png">Submissions
+											</a>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="next-button reverse">
+											<!--<a href="#searcg">
+												Search<img class="arrow" src="img/arrow-down-white.png">
+											</a>-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Latest Content -->
+		<section id="latest-content" class="category">
+			<div class="container">
+				<h3>Photography</h3>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-1.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Editorial / 10.09.17 <br>&mdash; by Erika Bowes</p>
+									<p class="title">Moonage daydreams editorial by Emma Noelle &amp; Nico Pascual</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-2.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-3.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-5.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-5.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-1.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-2.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-3.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-4.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-5.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-1.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-2.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-3.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-4.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-5.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-1.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-2.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-3.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-4.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 latest-content-item" style="display: none;">
+						<div class="card">
+							<a href="article.html">
+								<div class="card-img-top" style="background-image: url('img/latest-content-thumbnail-5.jpg');">
+									<div class="overlay"></div>
+								</div>
+								<div class="card-body">
+									<p class="tag">Lorem ipsum / 24.02.18 <br>&mdash; by Lorem ipsum</p>
+									<p class="title">Lorem ipsum dolor sit amet consectetur elit donec urna</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="container load-more">
+					<button id="load-more-button" type="button" class="btn btn-outline-primary"><i class="icon-star"></i>Load More</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Foooter -->
+		<section id="footer">
+			<div class="container">
+				<img src="img/sukeban-logo-red.png">
+			</div>
+		</section>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- Swiper JS -->
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				loop: true,
+				effect: 'fade',
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<i class="icon-star ' + className + '"></i>';
+					},
+				},
+			});
+		</script>
+
+		<!-- Blur On Scroll JS -->
+		<script src="js/blurOnScroll.js"></script>
+
+		<!-- Load More JS -->
+		<script src="js/loadMore.js"></script>
+		
+	</body>
+</html>

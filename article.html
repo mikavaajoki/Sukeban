@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+
+		<!-- Fontello CSS -->
+		<link rel="stylesheet" href="css/fontello.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css">		
+
+		<title>Article · Sukeban Magazine</title>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+			<a class="navbar-brand" href="index.html"><img src="img/sukeban-logo.png" alt="Sukeban Logo"></a>
+
+			<!-- Desktop Navigation -->
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="category-fashion.html">Fashion</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-photography.html">Photography</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-written.html">Written</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-girlsbygirls.html">Girlsbygirls</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category-art.html">Art</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Categories</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Magazine</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Submissions</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#index-modal">Search</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sukeban TV</a>
+					</li>
+					<li class="nav-item social-media">
+						<a class="nav-link social-media-link" href="#"><i class="icon-facebook"></i></a>
+						<a class="nav-link social-media-link" href="#"><i class="icon-twitter"></i></a>
+						<a class="nav-link social-media-link" href="#"><i class="icon-instagram"></i></a>
+						<a class="nav-link social-media-link" href="#"><i class="icon-tumblr"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="index-button d-none d-md-none d-lg-block" data-toggle="modal" data-target="#index-modal">
+				Index
+			</div>
+
+			<div class="index-button d-lg-none" data-toggle="modal" data-target="#mobile-navigation">
+				Index
+			</div>
+
+			<!-- Mobile Navigation -->
+			<div class="modal fade" id="mobile-navigation" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+							<a class="navbar-brand" href="index.html"><img src="img/sukeban-logo-blue.png" alt="Sukeban Logo"></a>
+							<div class="index-button" data-dismiss="modal" aria-label="Close">
+								Close
+							</div>
+						</nav>
+						<div class="modal-body">
+							<ul class="nav-items">
+								<li class="nav-item">
+									<a class="nav-link" href="#">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Categories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Magazine</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Submissions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sukeban TV</a>
+								</li>
+								<li class="nav-item social-media">
+									<a class="nav-link social-media-link" href="#"><i class="icon-facebook"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-twitter"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-instagram"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-tumblr"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Index Modal -->
+		<div class="modal fade" id="index-modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+						<a class="navbar-brand" href="index.html"><img src="img/sukeban-logo-blue.png" alt="Sukeban Logo"></a>
+
+						<!-- Desktop Navigation -->
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="category-fashion.html">Fashion</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-photography.html">Photography</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-written.html">Written</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-girlsbygirls.html">Girlsbygirls</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="category-art.html">Art</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Shop</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Categories</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Magazine</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#submissions">Submissions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sukeban TV</a>
+								</li>
+								<li class="nav-item social-media">
+									<a class="nav-link social-media-link" href="#"><i class="icon-facebook"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-twitter"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-instagram"></i></a>
+									<a class="nav-link social-media-link" href="#"><i class="icon-tumblr"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="index-button" data-dismiss="modal" aria-label="Close">
+							Close
+						</div>
+					</nav>
+					<div class="modal-body">
+
+						<!-- About -->
+						<section id="about">
+							<div class="container">
+								<div class="row justify-content-md-center">
+									<div class="col-xs-12 col-md-6">
+										<p>
+											Sukeban Magazine formed in Tokyo, Japan on December 2016 by Yuki Haze and Erika Bowes, due to a feeling of alienation and disillusion in the fashion industry. Not only did there seem to be a great lack of inclusivity in the industry, particularly of women of colour, but the manner in which several platforms celebrated or hired talent made it difficult for young, aspiring or unknown photographers, stylists, models, artists and other creative individuals to find exposure for their work without having a strong social media presence or general good fortune first. Additionally, there seemed to be such an onslaught of ‘apparent’ diversity in the industry, which only really served as tokenism at the best.
+										</p>
+										<img src="img/about.jpg" class="mx-auto d-block about-image">
+										<p>
+											Although Sukeban, as a print and online platform, still has a long way to go to really include and support a wide range of individuals, our main aim is to at least attempt to do so, as well as provide a space for people that might not be getting the attention for their work at the moment, but deserve to. 
+										</p>
+										<p>
+											We also hope that people who have an interest in creative topics are able to visit Sukeban and gain not only inspiration but also find other like-minded people to potentially work with or contact. 
+										</p>
+										<p>
+											Sukeban is currently a non-profit platform, although if you are a company/organisation that recognises how lit we are and wants to finance or work with the magazine in some way, please contact us.
+										</p>
+									</div>
+								</div>
+								<div class="row index-nav">
+									<div class="col-6">
+										<div class="prev-button reverse">
+											<!--<a href="#about">
+												<img class="arrow" src="img/arrow-up-white.png">About
+											</a>-->
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="next-button reverse">
+											<a href="#submissions">
+												Submissions<img class="arrow" src="img/arrow-down-white.png">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="gradient top-to-bottom">
+						</div>
+
+						<!-- Submissions -->
+						<section id="submissions">
+							<div class="container">
+								<div class="row justify-content-md-center">
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Submissions
+										</h2>
+										<p>
+											If you are interested in being featured on Sukeban please read these guidelines and contact the following email:
+										</p>
+										<p>
+											<a href="javascript:linkTo_UnCryptMailto('nbjmup;tvcnjttjpotAtvlfcbo/dp/vl');"><span class="email" data-user="submissions" data-website="sukeban.co.uk"></span></a>
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Girls by Girls
+										</h2>
+										<p>
+											Please note that we are only accepting images that have been shot by girls of girls for the moment, but other than that we don’t have any particular guidelines. You can shoot as many people as you want in whatever setting, and they can be any age &mdash; however nudity is only accepted if the subjects are 18 years of age or over. Please remember to: include the names and social medias handles of everyone involved, as well as a short bio about the person (4-6 sentences).
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Editorials &amp; Interviews
+										</h2>
+										<p>
+											If you have an interesting concept and a clear idea of who you are going to work with or interview please contact us and we’ll get back to you. Please remember to: include your full name and all social handles of everyone involved in the shoot as well as full clothing credits.
+										</p>
+									</div>
+									<div class="col-xs-12 col-md-6 col-xl-3">
+										<h2>
+											Artists
+										</h2>
+										<p>
+											Please remember to: include your full name and social media handles/site links.
+										</p>
+									</div>
+								</div>
+								<div class="row index-nav">
+									<div class="col-6">
+										<div class="prev-button">
+											<a href="#about">
+												<img class="arrow" src="img/arrow-up-blue.png">About
+											</a>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="next-button">
+											<a href="#contact">
+												Contact<img class="arrow" src="img/arrow-down-blue.png">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="gradient bottom-to-top">
+						</div>
+
+						<!-- Contact -->
+						<section id="contact">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<div class="mail">
+											<a href="javascript:linkTo_UnCryptMailto('nbjmup;tvcnjttjpotAtvlfcbo/dp/vl');"><span class="email" data-user="contact" data-website="sukeban.co.uk"></span></a>
+										</div>
+									</div>
+								</div>
+
+								<div class="row index-nav">
+									<div class="col-6">
+										<div class="prev-button reverse">
+											<a href="#submissions">
+												<img class="arrow" src="img/arrow-up-white.png">Submissions
+											</a>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="next-button reverse">
+											<!--<a href="#searcg">
+												Search<img class="arrow" src="img/arrow-down-white.png">
+											</a>-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Article Header -->
+		<section id="article-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col hero-image-area" style="background-image: url('img/article-hero-image-left.jpg');"></div>
+					<div class="col hero-image-area" style="background-image: url('img/article-hero-image-right.jpg');"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<h1 class="title">Moonage daydreams</h1>
+						<h2 class="standfirst">Moonage daydreams editorial by Emma Noelle &amp; Nico Pascual</h2>
+						<p class="tag">Editorial / 10.09.17 <br>&mdash; by Erika Bowes</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Article Content -->
+		<section id="article-content">
+			<div class="container">
+				<div class="row">
+
+					<!-- Article Credits -->
+					<div class="col-lg-2 article-credits">
+						<p>Photography<br>Erika Bowes</p>
+						<p>Fashion<br>Hayley Ashton</p>
+						<p>Interview<br>Yuki Haze</p>
+					</div>
+
+					<!-- Article Body -->
+					<div class="col-lg-8 article-body">
+						<p class="bold">How has your background and upbringing influenced you and your work?</p>
+						<p>I grew up in Berkeley, CA (B-TOWN//YAY AREAAAA) frequently travelling to Bangkok, Thailand to be with my mom and family. East Bay culture as a whole was hella influential for me, having friends from all over informs you a lot about the social inequities across a larger community. I could look around my classrooms and be surrounded by so many different cultures and stories. I miss that and somewhat took that for granted. When I was a kid I used to go to the Thai temple in Berkeley every Sunday to learn traditional dance and take Thai lessons. But as I got older and my mom moved back to Thailand, I drifted away from my roots. I didn’t have any Thai friends and my dad is white. He’s a great dad; he was always focused on providing for us so ensuring that I was connected with my Thai identity was not his priority.Later on, when I was in high school I think I started to get anxious about my identity. I wrote about it often. I would say I was “culturally confused.” Some of my more recent work is definitely me grappling for a more solid understanding of my culture and how I fit in. Growing up travelling between Bangkok and Berkeley, I have two very different cultural lenses. The Bay has a long-standing reputation for being socially and politically progressive (Black Panther Party, Free Speech Movement, Black Lives Matter, SF gay rights movement), so I was exposed to activism early on in my life. Not all of my work is directly political, but there are consistent themes often centred around empowerment and representation. When I come back to Thailand I still have that mindset; I want to cause change. I want to challenge people and create representation where it is lacking. It’s difficult to complete series in Thailand since I do not live there full-time. There are a lot of projects I want to do centred around Thai women. In particular, the sex tourism and trafficking industry is a sore spot in Thai society, a huge problem to be honest and I would like to complete a series shifting the focus to the sex workers, and finding out what their stories are. I want to ask who are they and are they safe? Are they happy? What resources are out there for them? In summer 2015 I spent 2 months engulfed in Bangkok’s skateboarding scene, and I came increasingly invested in documenting it and shedding light on it. I was hanging with guys a lot, but always looking for legit female skaters, which were hella hard to come by. In fact, I found no female skaters who were as skilled or as recognized as my male homies. The next time I came to Thailand I stayed for 4 months and became acquainted with the growing hip-hop scene. My work therhella hard to come by. In fact, I found no female skaters who were as skilled or as recognized as my male homies. The next time I came to Thailand I stayed for 4 months and became acquainted with the growing hip-hop scene. My work there generally asks two questions.</p>
+						<p>I grew up in Berkeley, CA (B-TOWN//YAY AREAAAA) frequently travelling to Bangkok, Thailand to be with my mom and family. East Bay culture as a whole was hella influential for me, having friends from all over informs you a lot about the social inequities across a larger community. I could look around my classrooms and be surrounded by so many different cultures and stories. I miss that and somewhat took that for granted. When I was a kid I used to go to the Thai temple in Berkeley every Sunday to learn traditional dance and take Thai lessons. But as I got older and my mom moved back to Thailand, I drifted away from my roots. I didn’t have any Thai friends and my dad is white. He’s a great dad; he was always focused on providing for us so ensuring that I was connected with my Thai identity was not his priority.Later on, when I was in high school I think I started to get anxious about my identity. I wrote about it often. I would say I was “culturally confused.” Some of my more recent work is definitely me grappling for a more solid understanding of my culture and how I fit in. Growing up travelling between Bangkok and Berkeley, I have two very different cultural lenses. The Bay has a long-standing reputation for being socially and politically progressive (Black Panther Party, Free Speech Movement, Black Lives Matter, SF gay rights movement), so I was exposed to activism early on in my life. Not all of my work is directly political, but there are consistent themes often centred around empowerment and representation. When I come back to Thailand I still have that mindset; I want to cause change. I want to challenge people and create representation where it is lacking. It’s difficult to complete series in Thailand since I do not live there full-time. There are a lot of projects I want to do centred around Thai women. In particular, the sex tourism and trafficking industry is a sore spot in Thai society, a huge problem to be honest and I would like to complete a series shifting the focus to the sex workers, and finding out what their stories are. I want to ask who are they and are they safe? Are they happy? What resources are out there for them? In summer 2015 I spent 2 months engulfed in Bangkok’s skateboarding scene, and I came increasingly invested in documenting it and shedding light on it. I was hanging with guys a lot, but always looking for legit female skaters, which were hella hard to come by. In fact, I found no female skaters who were as skilled or as recognized as my male homies. The next time I came to Thailand I stayed for 4 months and became acquainted with the growing hip-hop scene. My work therhella hard to come by. In fact, I found no female skaters who were as skilled or as recognized as my male homies. The next time I came to Thailand I stayed for 4 months and became acquainted with the growing hip-hop scene. My work there generally asks two questions.</p>
+
+						<!-- Gallery Launcher -->
+						<div class="gallery-launcher col-sm-10 offset-sm-1">
+							<div class="thumbnails">
+								<div class="thumb">
+									<a href="gallery.html">
+										<img src="img/gallery-thumb-1.jpg">
+										<div class="overlay"></div>
+									</a>
+								</div>
+								<div class="thumb">
+									<a href="gallery.html">
+										<img src="img/gallery-thumb-2.jpg">
+										<div class="overlay"></div>
+									</a>
+								</div>
+								<div class="thumb">
+									<a href="gallery.html">
+										<img src="img/gallery-thumb-3.jpg">
+										<div class="overlay"></div>
+									</a>
+								</div>
+								<div class="thumb">
+									<a href="gallery.html">
+										<img src="img/gallery-thumb-4.jpg">
+										<div class="overlay"></div>
+									</a>
+								</div>
+								<div class="thumb">
+									<a href="gallery.html">
+										<img src="img/gallery-thumb-5.jpg">
+										<div class="overlay"></div>
+									</a>
+								</div>
+								<div class="thumb">
+									<a href="gallery.html">
+										<img src="img/gallery-thumb-6.jpg">
+										<div class="overlay"></div>
+									</a>
+								</div>
+							</div>
+							<div class="gallery-info">
+								<a href="gallery.html">
+									<p class="gallery-count-name">Gallery &mdash; 15 images<br><em>I Left My Heart on the Oedo Line</em></p>
+								</a>
+							</div>
+						</div>
+
+						<h3>In Hawaii</h3>
+						<p class="bold">How has your background and upbringing influenced you and your work?</p>
+						<p>I grew up in Berkeley, CA (B-TOWN//YAY AREAAAA) frequently travelling to Bangkok, Thailand to be with my mom and family. East Bay culture as a whole was hella influential for me, having friends from all over informs you a lot about the social inequities across a larger community. I could look around my classrooms and be surrounded by so many different cultures and stories. I miss that and somewhat took that for granted. When I was a kid I used to go to the Thai temple in Berkeley every Sunday to learn traditional dance and take Thai lessons. But as I got older and my mom moved back to Thailand, I drifted away from my roots. I didn’t have any Thai friends and my dad is white. He’s a great dad; he was always focused on providing for us so ensuring that I was connected with my Thai identity was not his priority.Later on, when I was in high school I think I started to get anxious about my identity. I wrote about it often. I would say I was “culturally confused.” Some of my more recent work is definitely me grappling for a more solid understanding of my culture and how I fit in. Growing up travelling between Bangkok and Berkeley, I have two very different cultural lenses. The Bay has a long-standing reputation for being socially and politically progressive (Black Panther Party, Free Speech Movement, Black Lives Matter, SF gay rights movement), so I was exposed to activism early on in my life. Not all of my work is directly political, but there are consistent themes often centred around empowerment and representation. When I come back to Thailand I still have that mindset; I want to cause change. I want to challenge people and create representation where it is lacking.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
