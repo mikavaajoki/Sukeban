@@ -93,7 +93,6 @@ body {
 	color: #000000;
 	overflow-x: hidden;
 	overflow: auto;
-	hyphens: auto;
 }
 
 * {
@@ -387,7 +386,8 @@ a {
 		display: inline-block;
 		border-bottom: 2px solid rgba(255,215,0,0);
 		transition: border-bottom .3s ease;
-		margin-bottom: 15px;	
+		margin-bottom: 15px;
+		hyphens: auto;
 	}
 
 	a:hover .tag,
@@ -589,6 +589,7 @@ a {
 				color: #ffd700;
 				margin-left: 40px;
 				margin-right: 40px;
+				hyphens: auto;
 			}
 
 			.tag {
@@ -652,7 +653,7 @@ a {
 		margin-bottom: 40px;
 
 		@include break-point-sm {
-			font-size: 170px;
+			font-size: 140px;
 		}
 	}
 
@@ -665,9 +666,10 @@ a {
 		color: #000000;
 		text-align: center;
 		margin-bottom: 15px;
+		hyphens: none;
 
 		@include break-point-sm {
-			font-size: 28px;
+			font-size: 26px;
 		}
 	}
 
@@ -711,6 +713,12 @@ a {
 	}
 
 	.article-body {
+		margin-bottom: 120px;
+
+		a {
+			border-bottom: 1px solid rgba(0,0,0,1);
+			padding-bottom: 2px;
+		}
 
 		p {
 			font-weight: 400;
@@ -725,10 +733,11 @@ a {
 				font-weight: 700;
 				text-indent: 0px;
 			}
-		}
 
-		p:last-of-type {
-			margin-bottom: 120px;
+			a {
+				border-bottom: 1px solid rgba(0,0,0,1);
+				padding-bottom: 2px;
+			}
 		}
 
 		h3 {
@@ -751,6 +760,8 @@ a {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
 
 			.thumb {
 				width: calc(100% / 3 - 30px);
@@ -760,6 +771,7 @@ a {
 				img {
 					display: block;
 					max-width: 100%;
+				//	transition: opacity .3s ease;
 				}
 
 				.overlay {
@@ -779,6 +791,10 @@ a {
 				a:hover .overlay {
 					opacity: 1;
 				}
+
+				a:hover img {
+				//	opacity: .8;
+				}
 			}
 		}
 
@@ -789,9 +805,19 @@ a {
 				font-family: 'Dia';
 				font-weight: 700;
 				font-size: 20px;
-				line-height: 22px;
+				line-height: 26px;
 				text-align: center;
 				margin-bottom: 20px;;
+
+				a {
+					padding-bottom: 1px;
+					border-bottom: 1px solid rgba(0,0,0,0);
+					transition: border-bottom .3s ease;
+
+					&:hover {
+						border-bottom: 2px solid rgba(0,0,0,1);
+					}
+				}
 			}
 		}
 	}
@@ -813,16 +839,16 @@ a {
 		}
 
 		.swiper-wrapper {
-			height: 70vh;
+			height: 65vh;
 
 			@include break-point-md {
 				height: 100vh;
 			}
 					
 			.swiper-slide {
-				background-size: cover;
+				background-size: contain;
+				background-repeat: no-repeat;
 				background-position: center;
-				overflow: hidden;
 			}
 		}
 
@@ -837,7 +863,7 @@ a {
 				width: 17px;
 				height: 22px;
 				margin-top: -11px;
-				left: 15px;
+				left: 60px;
 				right: auto;
 			}
 		}
@@ -854,7 +880,7 @@ a {
 				width: 17px;
 				height: 22px;
 				margin-top: -11px;
-				right: 15px;
+				right: 60px;
 				left: auto;
 			}
 		}
@@ -868,6 +894,7 @@ a {
 		color: #0000ff;
 		padding: 50px 55px 60px 55px;
 		text-align: center;
+		hyphens: none;
 
 		@include break-point-md {
 			padding: 50px 20px 60px 75px;
@@ -1108,12 +1135,15 @@ a {
 		p {
 			color: #ffffff;
 			font-weight: 400;
-			font-size: 20px;
-			line-height: 30px;
-			text-align: justify;
+			font-size: 28px;
+			line-height: 1.25em;
+			text-align: center;
 			text-justify: auto;
-			text-indent: 30px;
 			margin: 0;
+
+			@include break-point-md {
+				font-size: 40px;
+			}
 
 			a {
 				border-bottom: 1px solid rgba(255,255,255,1);
@@ -1125,6 +1155,11 @@ a {
 			width: 200px;
 			margin-top: 40px;
 			margin-bottom: 40px;
+
+			@include break-point-md {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
 		}
 
 		a {
@@ -1200,8 +1235,8 @@ a {
 			color: #ffffff;
 			text-align: center;
 			height: 100vh;
-				line-height: 100vh;
-				white-space: nowrap;
+			line-height: 100vh;
+			white-space: nowrap;
 
 			@include break-point-xs {
 				font-size: 24px;
