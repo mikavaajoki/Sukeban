@@ -40,8 +40,7 @@ body {
   letter-spacing: .025em;
   color: #000000;
   overflow-x: hidden;
-  overflow: auto;
-  hyphens: auto; }
+  overflow: auto; }
 
 a {
   color: #000000;
@@ -245,7 +244,8 @@ a {
     display: inline-block;
     border-bottom: 2px solid rgba(255, 215, 0, 0);
     transition: border-bottom .3s ease;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    hyphens: auto; }
   #hero-slider a:hover .tag,
   #hero-slider a:hover .title {
     border-bottom: 2px solid gold; }
@@ -388,7 +388,8 @@ a {
         line-height: .8em;
         color: #ffd700;
         margin-left: 40px;
-        margin-right: 40px; }
+        margin-right: 40px;
+        hyphens: auto; }
       #editors-picks .post .overlay .tag {
         font-size: 12px;
         line-height: 15px;
@@ -432,7 +433,7 @@ a {
     margin-bottom: 40px; }
     @media only screen and (min-width: 576px) {
       #article-header h1.title {
-        font-size: 170px; } }
+        font-size: 140px; } }
   #article-header h2.standfirst {
     font-family: 'Dia';
     font-weight: 900;
@@ -441,10 +442,11 @@ a {
     letter-spacing: 0;
     color: #000000;
     text-align: center;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    hyphens: none; }
     @media only screen and (min-width: 576px) {
       #article-header h2.standfirst {
-        font-size: 28px; } }
+        font-size: 26px; } }
   #article-header .tag {
     font-size: 12px;
     line-height: 15px;
@@ -467,27 +469,33 @@ a {
   @media only screen and (min-width: 992px) {
     #article-content .article-credits p:last-of-type {
       margin-bottom: 75px; } }
-#article-content .article-body p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
-  text-justify: auto;
-  text-indent: 30px;
-  margin: 0; }
-  #article-content .article-body p.bold {
-    font-weight: 700;
-    text-indent: 0px; }
-#article-content .article-body p:last-of-type {
+#article-content .article-body {
   margin-bottom: 120px; }
-#article-content .article-body h3 {
-  font-family: 'Dia';
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
-  text-transform: uppercase;
-  margin-top: 80px;
-  margin-bottom: 40px; }
+  #article-content .article-body a {
+    border-bottom: 1px solid black;
+    padding-bottom: 2px; }
+  #article-content .article-body p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 30px;
+    margin: 0; }
+    #article-content .article-body p.bold {
+      font-weight: 700;
+      text-indent: 0px; }
+    #article-content .article-body p a {
+      border-bottom: 1px solid black;
+      padding-bottom: 2px; }
+  #article-content .article-body h3 {
+    font-family: 'Dia';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 40px; }
 #article-content .gallery-launcher {
   padding: 15px;
   margin-top: 55px;
@@ -495,7 +503,9 @@ a {
   #article-content .gallery-launcher .thumbnails {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
     #article-content .gallery-launcher .thumbnails .thumb {
       width: calc(100% / 3 - 30px);
       margin: 15px;
@@ -523,9 +533,15 @@ a {
       font-family: 'Dia';
       font-weight: 700;
       font-size: 20px;
-      line-height: 22px;
+      line-height: 26px;
       text-align: center;
       margin-bottom: 20px; }
+      #article-content .gallery-launcher .gallery-info .gallery-count-name a {
+        padding-bottom: 1px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: border-bottom .3s ease; }
+        #article-content .gallery-launcher .gallery-info .gallery-count-name a:hover {
+          border-bottom: 2px solid black; }
 
 /* Gallery */
 #gallery {
@@ -538,14 +554,14 @@ a {
       #gallery .swiper-container {
         padding: 0; } }
     #gallery .swiper-container .swiper-wrapper {
-      height: 70vh; }
+      height: 65vh; }
       @media only screen and (min-width: 768px) {
         #gallery .swiper-container .swiper-wrapper {
           height: 100vh; } }
       #gallery .swiper-container .swiper-wrapper .swiper-slide {
-        background-size: cover;
-        background-position: center;
-        overflow: hidden; }
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; }
     #gallery .swiper-container .swiper-button-prev,
     #gallery .swiper-container .swiper-container-rtl .swiper-button-next {
       display: none; }
@@ -558,7 +574,7 @@ a {
           width: 17px;
           height: 22px;
           margin-top: -11px;
-          left: 15px;
+          left: 60px;
           right: auto; } }
     #gallery .swiper-container .swiper-button-next,
     #gallery .swiper-container .swiper-container-rtl .swiper-button-prev {
@@ -573,7 +589,7 @@ a {
           width: 17px;
           height: 22px;
           margin-top: -11px;
-          right: 15px;
+          right: 60px;
           left: auto; } }
   #gallery .info {
     font-family: 'Dia';
@@ -582,7 +598,8 @@ a {
     line-height: 28px;
     color: #0000ff;
     padding: 50px 55px 60px 55px;
-    text-align: center; }
+    text-align: center;
+    hyphens: none; }
     @media only screen and (min-width: 768px) {
       #gallery .info {
         padding: 50px 20px 60px 75px;
@@ -720,12 +737,14 @@ a {
     #index-modal #about p {
       color: #ffffff;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
+      font-size: 28px;
+      line-height: 1.25em;
+      text-align: center;
       text-justify: auto;
-      text-indent: 30px;
       margin: 0; }
+      @media only screen and (min-width: 768px) {
+        #index-modal #about p {
+          font-size: 40px; } }
       #index-modal #about p a {
         border-bottom: 1px solid white;
         padding-bottom: 2px; }
@@ -733,6 +752,10 @@ a {
       width: 200px;
       margin-top: 40px;
       margin-bottom: 40px; }
+      @media only screen and (min-width: 768px) {
+        #index-modal #about .about-image {
+          margin-top: 50px;
+          margin-bottom: 50px; } }
     #index-modal #about a {
       border-bottom: 1px solid rgba(255, 255, 255, 0);
       padding-bottom: 2px;
